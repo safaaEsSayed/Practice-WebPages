@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Fav Website</title>
+    <link rel="stylesheet" href="/lab03.css">
+</head>
+<body>  
+  
+<section class="banner">
+    <header>
+        <a href="#" class="logo">Apple Watch</a>
+        <div class="toggle" onclick="toggle();"></div>
+    </header>
+    <div class="content">
+        <div class="contentBx">
+            <h2>It’s the ultimate device <br>for a healthy life.</h2>
+            <p>Apple Watch can do what your other devices can’t because it’s on your wrist. When you wear it, you get a fitness partner that measures all the ways you move, meaningful health insights and a connection to the people and things you care about most!</p>
+            <a href="#">Buy Now!</a>
+        </div>
+        <div class="imgBx">
+            <img src="watch.png" >
+        </div>
+    </div>
+    <ul class="sci">
+        <li><a href="#"><img src="facebook.png"></a></li>
+        <li><a href="#"><img src="twitter.png"></a></li>
+        <li><a href="#"><img src="instagram.png"></a></li>
+    </ul>
+    <ul class="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Store</li>
+        
+        <li>Product</li>
+        <li>Contact</li>
+    </ul>
+</section>    
+
+    <script type="text/javascript">
+
+        function toggle(){
+        const toggle=document.querySelector('.toggle');
+        const banner=document.querySelector('.banner');
+        toggle.classList.toggle('active')
+        banner.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
